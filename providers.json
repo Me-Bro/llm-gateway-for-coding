@@ -1,0 +1,102 @@
+{
+  "strategy": "priority",
+  "providers": [
+    {
+      "name": "zai-glm-4.7-flash",
+      "baseUrl": "https://api.z.ai/api/paas/v4",
+      "keyEnv": "ZAI_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "glm-4.7-flash",
+        "json": "glm-4.7-flash"
+      }
+    },
+    {
+      "name": "zai-glm-4.5-flash",
+      "baseUrl": "https://api.z.ai/api/paas/v4",
+      "keyEnv": "ZAI_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "glm-4.5-flash"
+      }
+    },
+    {
+      "name": "groq",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "keyEnv": "GROQ_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "fast": "openai/gpt-oss-120b",
+        "json": "openai/gpt-oss-120b",
+        "vision": "qwen/qwen3.8-27b"
+      }
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "keyEnv": "GEMINI_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "gemini-3.6-flash",
+        "json": "gemini-3.6-flash",
+        "vision": "gemini-3.6-flash"
+      }
+    },
+    {
+      "name": "gemini-3.5-flash",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "keyEnv": "GEMINI_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "gemini-3.5-flash",
+        "vision": "gemini-3.5-flash"
+      }
+    },
+    {
+      "name": "gemini-3-flash-preview",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "keyEnv": "GEMINI_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "gemini-3-flash-preview"
+      }
+    },
+    {
+      "name": "gemini-3.5-flash-lite",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "keyEnv": "GEMINI_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "fast": "gemini-3.5-flash-lite",
+        "smart": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "name": "openrouter-nemotron-ultra",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "keyEnv": "OPENROUTER_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "nvidia/nemotron-3-ultra-550b-a55b:free"
+      }
+    },
+    {
+      "name": "openrouter-north-code",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "keyEnv": "OPENROUTER_API_KEY",
+      "timeoutMs": 120000,
+      "models": {
+        "smart": "cohere/north-mini-code:free"
+      }
+    },
+    {
+      "name": "nvidia-kimi-k3",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "keyEnv": "NVIDIA_API_KEY",
+      "timeoutMs": 90000,
+      "models": {
+        "smart": "moonshotai/kimi-k3"
+      }
+    }
+  ]
+}
